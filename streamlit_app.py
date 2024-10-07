@@ -8,7 +8,6 @@ st.write(
     """Choose the fruits you want in your custom Smoothie!
     """
 )
-
 # Mel is delighted to see that Streamlit have a property called max_selections.
 # That seems like a super-easy way to limit the fruits added to an order. 
 
@@ -49,4 +48,8 @@ if ingredients_list:
         # st.success('Your Smoothie is ordered! ', name_on_order)
         st.success('Your Smoothie is ordered!', icon="✅")
         
-        
+import requests
+
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+st.text(fruityvice_response)
+  
