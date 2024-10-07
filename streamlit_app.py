@@ -12,7 +12,6 @@ st.write(
 )
 # Mel is delighted to see that Streamlit have a property called max_selections.
 # That seems like a super-easy way to limit the fruits added to an order. 
-
 name_on_order  = st.text_input('Name on Smoothie: ')
 st.write('The name on your smoothie will be', name_on_order)
 
